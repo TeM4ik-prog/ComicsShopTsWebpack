@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="./css.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comics Store</title>
+</head>
+
+<body>
+    <!-- <h1>Магазин комиксов</h1> -->
+    <div class="butts">
+        <div class="inputs">
+            <select id="select_shop"></select>
+            <input type="text" id="title" placeholder="название комикса">
+            <input type="text" id="artist" placeholder="художник">
+            <input type="text" id="genre" placeholder="жанр">
+            <button class="butt" id="result">Click</button>
+        </div>
+
+        <div class="MyReserved">
+            <input type="text" id="inp_Myreserved" placeholder="Name" required>
+            <button id="reserved">Показать забронированные мной</button>
+        </div>
+
+        <button id="add_comic">add comic</button>
+        <button id="show_new_comics">Show new comics</button>
+        <button id="MostSales">Show best selling comics</button>
+        <button id="MostPopArtist">Show best artists</button>
+
+        
+    </div>
+
+
+
+    <form id="containerAddComic">
+        <p style="margin: 0%; font-size: larger7;">ESC для выхода</p>
+
+        <div class="addParametres">
+            <select id="select_shop"></select>
+            <input type="text" name="title" placeholder="title">
+            <input type="text" name="artist" placeholder="artist">
+            <input type="text" name="publisher" placeholder="publisher">
+            <input type="number" name="pageCount" placeholder="pageCount">
+            <input type="text" name="genre" placeholder="genre">
+            <input type="number" name="year" placeholder="year">
+            <input type="text" name="costPrice" placeholder="costPrice">
+            <input type="number" name="sellingPrice" placeholder="sellingPrice">
+            <input type="number" name="quantity" placeholder="quantity">
+        </div>
+
+        <button id="add_comic_butt" type="submit">Add comic</button>
+    </form>
+
+
+    <div id="container"></div>
+
+
+
+</body>
+
+</html>
+
+<script src="./bundle.js"></script>
